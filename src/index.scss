@@ -1,0 +1,21 @@
+@import './scss/colors';
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+}
+.we-viedo-app {
+  background-color: $body-bg;
+  background-image: url(./assets/images/bg-top.svg), url(./assets/images/bg-bottom.svg);
+  background-position: right top, left bottom;
+  background-repeat: no-repeat, no-repeat;
+  font-family: 'Montserrat';
+  @media (max-width: 576px) {
+    background-size: 20%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

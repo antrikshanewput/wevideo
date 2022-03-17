@@ -1,0 +1,50 @@
+@import './scss/colors';
+
+.pricing-menu {
+  height: 100vh;
+  margin: 50px 0;
+  text-align: center;
+  .title {
+    color: $grey;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  label {
+    padding: 6px 20px;
+    color: $label-color;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  .toogle-switch {
+    display: inline-block;
+    justify-content: center;
+    #custom-switch {
+      cursor: pointer;
+      height: 33px;
+      width: 54px;
+      outline: none;
+    }
+  }
+  .form-check-input:checked {
+    border-color: $white;
+    background-color: $purple;
+  }
+  .pricing-options {
+    padding: 20px 0px 60px 0;
+  }
+  .card {
+    border: 0;
+    .card-body {
+      box-shadow: 0px 2px 2px $box-shadow;
+    }
+  }
+  .pricing-cards {
+    cursor: pointer;
+    margin: auto;
+    width: 75%;
+    @media (max-width: 576px) {
+      width: 86%;
+    }
+  }
+}
